@@ -1,0 +1,82 @@
+{
+  "id": "product_id_123",
+  "productCode": 3651,
+  "name": "AMD Athlon 3000G Processor with Radeon Graphics",
+  "description": "This is a detailed description of the product.",
+  "category": {
+    "id": "category_id_1",
+    "name": "Category Name"
+  },
+  "brand": {
+    "id": "brand_id_1",
+    "name": "Intel"
+  },
+  "price": {
+    "current": 99.99,
+    "currency": "USD",
+    "discount": {
+      "percentage": 10,
+      "startDate": "2023-03-01",
+      "endDate": "2023-03-31"
+    }
+  },
+  "images": [
+    {
+      "id": "image_id_1",
+      "url": "https://www.startech.com.bd/image/cache/catalog/processor/AMD/athlon-3000g/athlon-3000g-1-228x228.jpg",
+      "alt": "Product Image 1"
+    },
+    {
+      "id": "image_id_2",
+      "url": "https://example.com/product_image_2.jpg",
+      "alt": "Product Image 2"
+    }
+  ],
+  "features": {
+    "header": "key features",
+    "model": "Pentium Gold G7400",
+    "baseClockSpeed": " 3.70 GHz",
+    "cache": "6 MB Intel Smart Cache, Socket: LGA 1700",
+    "cpuCores": "2, CPU Threads: 4Intel UHD Graphics 710"
+  },
+  "variants": [
+    {
+      "id": "variant_id_1",
+      "name": "Size",
+      "options": ["Small", "Medium", "Large"]
+    },
+    {
+      "id": "variant_id_2",
+      "name": "Color",
+      "options": ["Red", "Blue", "Green"]
+    }
+  ],
+  "inventory": {
+    "inStock": true,
+    "quantity": 50
+  },
+  "ratings": {
+    "average": 4.2,
+    "count": 120
+  },
+  "reviews": [
+    {
+      "id": "review_id_1",
+      "author": "John Doe",
+      "rating": 5,
+      "title": "Great product!",
+      "content": "This is a great product. I highly recommend it.",
+      "date": "2023-02-15T10:30:00Z"
+    },
+    {
+      "id": "review_id_2",
+      "author": "Jane Smith",
+      "rating": 3,
+      "title": "Average product",
+      "content": "The product is okay, but not as good as I expected.",
+      "date": "2023-01-20T14:45:00Z"
+    }
+  ],
+  "recentlyViewed": true,
+  "addedToCart": false
+}
