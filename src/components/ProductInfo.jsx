@@ -7,12 +7,18 @@ const ProductInfo = ({
   inventory,
   productCode,
   brand,
-  features,
+  description,
+  //   features,
 }) => {
+  //   console.log(images);
   return (
     <div className=" py-6  flex">
       <div className=" w-1/2">
-        <img className=" w-[450px] mx-auto" src={images[0]?.url} alt="" />
+        <img
+          className=" w-[450px] mx-auto"
+          src={images[0]?.url}
+          alt="Product Image 1"
+        />
       </div>
       <div>
         <h1 className=" text-[#3749CA] text-2xl font-medium capitalize">
@@ -29,21 +35,14 @@ const ProductInfo = ({
             }`}</span>
           </button>
           <button className=" bg-[#F5F6FC] rounded-full text-[#666666] py-2 px-3 text-sm">
-            Product Code: <span className=" text-[#000000]">{productCode}</span>
-          </button>
-          <button className=" bg-[#F5F6FC] rounded-full text-[#666666] py-2 px-3 text-sm">
             Brand: <span className=" text-[#000000]">{brand.name}</span>
           </button>
         </div>
         <div>
-          <h3 className=" text-xl mb-3">{features.header}</h3>
+          <h3 className=" text-xl mb-3">{}</h3>
           <div className="flex flex-col gap-2 capitalize">
-            <p>Model: {features.model}</p>
-            <p>Base Clock Speed: {features.baseClockSpeed}</p>
-            <p>Cache: {features.cache}</p>
-            <p>CPU Cores: {features.cpuCores}</p>
+            <p>Model: {description}</p>
           </div>
-          {/* <Link to="">view more info</Link> */}
 
           <a
             href="#"
