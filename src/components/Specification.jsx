@@ -1,10 +1,17 @@
 import React from "react";
-const Specification = () => {
+const Specification = ({
+  basicInformation,
+  memorySpecifications,
+  GraphicsSpecifications,
+  warrantyInformation,
+}) => {
+  // console.log(basicInformation[0].name);
+
   return (
     <div>
-      <div className="flex justify-between gap-5 bg-[#f2f4f8] mt-4">
+      <div className=" bg-[#f2f4f8] mt-4">
         <div class=" w-full my-10 ">
-          <div className=" pb-4 flex gap-3">
+          <div className=" p-3 text-sm gap-3 flex flex-wrap">
             <button className=" bg-white px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
               Specification
             </button>
@@ -18,7 +25,7 @@ const Specification = () => {
               reviews
             </button>
           </div>
-          <div className="p-6 bg-white shadow-md rounded">
+          <div className="p-3 bg-white shadow-md rounded">
             <h2 class="text-lg font-semibold border-b pb-4">Specification</h2>
             <div class="mt-4">
               <div class="bg-[#F5F6FC] p-3 rounded">
@@ -27,83 +34,128 @@ const Specification = () => {
                 </p>
               </div>
               <div class="mt-2">
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Base Frequency</span>
-                  <span>3.70 GHz</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {basicInformation[0].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {basicInformation[0].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cache</span>
-                  <span>6 MB</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {basicInformation[1].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {basicInformation[1].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cores</span>
-                  <span>2</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {basicInformation[2].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {basicInformation[2].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Threads</span>
-                  <span>4</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {basicInformation[3].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {basicInformation[3].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 hover:bg-[#f2f4f8]">
-                  <span>Default TDP</span>
-                  <span>46W</span>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4">
-              <div class="bg-[#F5F6FC] p-3 rounded">
-                <p class="text-sm font-semibold text-[#3749BB]">
-                  Basic Information
-                </p>
-              </div>
-              <div class="mt-2">
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Base Frequency</span>
-                  <span>3.70 GHz</span>
-                </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cache</span>
-                  <span>6 MB</span>
-                </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cores</span>
-                  <span>2</span>
-                </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Threads</span>
-                  <span>4</span>
-                </div>
-                <div class="flex justify-between py-2 hover:bg-[#f2f4f8]">
-                  <span>Default TDP</span>
-                  <span>46W</span>
+                <div class="flex flex-col gap-2 py-2 hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {basicInformation[4].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {basicInformation[4].value}
+                  </span>
                 </div>
               </div>
             </div>
             <div class="mt-4">
               <div class="bg-[#F5F6FC] p-3 rounded">
                 <p class="text-sm font-semibold text-[#3749BB]">
-                  Basic Information
+                  Memory Specifications
                 </p>
               </div>
               <div class="mt-2">
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Base Frequency</span>
-                  <span>3.70 GHz</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {memorySpecifications[0].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {memorySpecifications[0].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cache</span>
-                  <span>6 MB</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {memorySpecifications[1].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {memorySpecifications[1].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Cores</span>
-                  <span>2</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {memorySpecifications[2].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {memorySpecifications[2].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 border-b hover:bg-[#f2f4f8]">
-                  <span>Threads</span>
-                  <span>4</span>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="bg-[#F5F6FC] p-3 rounded">
+                <p class="text-sm font-semibold text-[#3749BB]">
+                  Graphics Specifications
+                </p>
+              </div>
+              <div class="mt-2">
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {GraphicsSpecifications[0].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {GraphicsSpecifications[0].value}
+                  </span>
                 </div>
-                <div class="flex justify-between py-2 hover:bg-[#f2f4f8]">
-                  <span>Default TDP</span>
-                  <span>46W</span>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {GraphicsSpecifications[1].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {GraphicsSpecifications[1].value}
+                  </span>
+                </div>
+                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm text-[#666666] capitalize">
+                    {GraphicsSpecifications[2].name}
+                  </span>
+                  <span className=" text-sm font-bold">
+                    {GraphicsSpecifications[2].value}
+                  </span>
+                </div>
+              </div>
+              <div>
+                <div class="bg-[#F5F6FC] p-3 rounded">
+                  <p class="text-sm font-semibold text-[#3749BB]">
+                    Warranty Information
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                    <span className="text-sm text-[#666666] capitalize">
+                      {warrantyInformation[0].name}
+                    </span>
+                    <span className=" text-sm font-bold">
+                      {warrantyInformation[0].value}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

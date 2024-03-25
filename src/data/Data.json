@@ -57,27 +57,62 @@
       "average": 4.2,
       "count": 120
     },
-    "basicInformation": {
-      "baseFrequency": "3.70 GHz",
-      "cache": "6 MB",
-      "cores": "2",
-      "threads": "4",
-      "defaultTDP": "46W"
-    },
-    "memorySpecifications": {
-      "maximumSize": "128 GB",
-      "type": "Up to DDR5 4800 MT/s Up to DDR4 3200 MT/s",
-      "maxNumberOfChannels": "2"
-    },
-    "GraphicsSpecifications": {
-      "processorGraphics": "Intel UHD Graphics 710",
-      "baseFrequency": "300 MHz",
-      "maxDynamicFrequency": "1.35 GHz",
-      "maxResolution": "HDMI: 4096 x 2160 @ 60Hz DP: 7680 x 4320 @ 60Hz eDP - Integrated Flat Panel: 5120 x 3200 @ 120Hz"
-    },
-    "warrantyInformation": {
-      "manufacturingWarranty": "03 years warranty (No Warranty for Fan or Cooler)"
-    },
+    "basicInformation": [
+      {
+        "name": "baseFrequency",
+        "value": "3.70 GHz"
+      },
+      {
+        "name": "cache",
+        "value": "6 MB"
+      },
+      {
+        "name": "cores",
+        "value": "2"
+      },
+      {
+        "name": "threads",
+        "value": "4"
+      },
+      {
+        "name": "defaultTDP",
+        "value": "46W"
+      }
+    ],
+    "memorySpecifications": [
+      {
+        "name": "maximumSize",
+        "value": "128 GB"
+      },
+      {
+        "name": "type",
+        "value": "Up to DDR5 4800 MT/s Up to DDR4 3200 MT/s"
+      },
+      {
+        "name": "maxNumberOfChannels",
+        "value": "2"
+      }
+    ],
+    "GraphicsSpecifications": [
+      {
+        "name": "processorGraphics",
+        "value": "Intel UHD Graphics 710"
+      },
+      {
+        "name": "maxDynamicFrequency",
+        "value": "1.35 GHz"
+      },
+      {
+        "name": "maxResolution",
+        "value": "HDMI: 4096 x 2160 @ 60Hz DP: 7680 x 4320 @ 60Hz eDP - Integrated Flat Panel: 5120 x 3200 @ 120Hz"
+      }
+    ],
+    "warrantyInformation": [
+      {
+        "name": "manufacturingWarranty",
+        "value": "03 years warranty (No Warranty for Fan or Cooler)"
+      }
+    ],
     "listOfObjects": [
       {
         "name": "Intel Pentium Gold G7400 Alder Lake Processor",

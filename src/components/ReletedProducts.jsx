@@ -63,6 +63,9 @@ const ReletedProducts = () => {
           </div>
         </div>
       </div>
+      <div className=" text-center capitalize text-lg font-bold text-[#3749BB]">
+        <a href="#">recently viewed</a>
+      </div>
     </div>
   );
 };

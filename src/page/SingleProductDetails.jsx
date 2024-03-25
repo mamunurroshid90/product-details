@@ -9,13 +9,25 @@ import Questions from "../components/Questions";
 import Reviews from "../components/Reviews";
 
 const SingleProductDetails = () => {
-  const { name, description, images, brand, price, inventory, reviews } =
-    singleProductInfoData[0];
+  const {
+    name,
+    description,
+    images,
+    brand,
+    price,
+    inventory,
+    reviews,
+    listOfObjects,
+    basicInformation,
+    memorySpecifications,
+    GraphicsSpecifications,
+    warrantyInformation,
+  } = singleProductInfoData[0];
 
-  //   console.log(name);
+  // console.log(basicInformation);
   return (
     <div>
-      <div className="max-w-container  px-3 mx-auto">
+      <div className="max-w-container px-3 mx-auto">
         <ProductInfo
           brandName={name}
           brand={brand}
@@ -24,17 +36,22 @@ const SingleProductDetails = () => {
           inventory={inventory}
           description={description}
         />
-        <div className="flex justify-between gap-5">
-          <div className=" w-3/4">
-            <Specification />
+        <div className="">
+          <div className="">
+            <Specification
+              basicInformation={basicInformation}
+              memorySpecifications={memorySpecifications}
+              GraphicsSpecifications={GraphicsSpecifications}
+              warrantyInformation={warrantyInformation}
+            />
+            <ProductDescription listOfObjects={listOfObjects} />
+            <Questions />
+            <Reviews />
           </div>
           <div className="h-fit">
             <ReletedProducts />
           </div>
         </div>
-        <ProductDescription />
-        <Questions />
-        <Reviews />
       </div>
     </div>
   );
