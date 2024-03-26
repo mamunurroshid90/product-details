@@ -9,8 +9,8 @@ const Reviews = () => {
     submitButton.classList.add = "hidden";
   };
   return (
-    <div>
-      <div className="  my-10 p-4 bg-white">
+    <section className=" mx-4 my-5">
+      <div className="p-4 bg-white rounded shadow">
         <div className="flex flex-col gap-3">
           <div>
             <h2 className="text-lg capitalize font-semibold">reviews(0)</h2>
@@ -36,13 +36,13 @@ const Reviews = () => {
         <div className=" flex justify-center items-center">
           <div
             id="reviewContainer"
-            className="hidden w-[400px] h-[100px] p-5 rounded bg-[#babac3]"
+            className="hidden max-w-[400px] h-[100px] p-5 rounded bg-[#F2F4F8]"
           >
             <input
               type="text"
               id="inputField"
               placeholder="Enter your questions"
-              className=" w-full py-1 px-2 bg-inherit placeholder-white text-white border border-gray-200 rounded"
+              className=" w-full py-1 px-2 bg-inherit text-sm border border-gray-200 rounded"
             />
             <button
               onClick={handleReviewButton}
@@ -54,7 +54,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

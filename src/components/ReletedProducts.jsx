@@ -3,16 +3,16 @@ import { FaSquarePlus } from "react-icons/fa6";
 
 const ReletedProducts = () => {
   return (
-    <div>
-      <div className=" bg-white p-5 mt-8">
+    <section className=" mx-4">
+      <div className=" bg-white p-4 rounded shadow">
         <h2 className=" text-center text-[#3749BB] font-medium capitalize text-xl pb-3">
           related products
         </h2>
         <div className="flex gap-5 border-t pt-4 mb-5">
-          <div className="w-[100px] h-[100px] bg-red-300">
+          <div className="w-[120px] h-[70px] bg-red-300">
             <img className="w-full" src="" alt="" />
           </div>
-          <div className=" w-[150px]">
+          <div className=" min-w-[120px]">
             <p className=" font-medium text-sm">
               AMD Athlon 3000G Processor with Radeon Graphics
             </p>
@@ -27,10 +27,10 @@ const ReletedProducts = () => {
           </div>
         </div>
         <div className="flex gap-5 border-t pt-4 mb-5">
-          <div className="w-[100px] h-[100px] bg-red-300">
+          <div className="w-[120px] h-[70px] bg-red-300">
             <img className="w-full" src="" alt="" />
           </div>
-          <div className=" w-[150px]">
+          <div className=" min-w-[150px]">
             <p className=" font-medium text-sm">
               AMD Athlon 3000G Processor with Radeon Graphics
             </p>
@@ -45,10 +45,10 @@ const ReletedProducts = () => {
           </div>
         </div>
         <div className="flex gap-5 border-t pt-4 mb-5">
-          <div className="w-[100px] h-[100px] bg-red-300">
+          <div className="w-[120px] h-[70px] bg-red-300">
             <img className="w-full" src="" alt="" />
           </div>
-          <div className=" w-[150px]">
+          <div className=" min-w-[150px]">
             <p className=" font-medium text-sm">
               AMD Athlon 3000G Processor with Radeon Graphics
             </p>
@@ -63,10 +63,10 @@ const ReletedProducts = () => {
           </div>
         </div>
       </div>
-      <div className=" text-center capitalize text-lg font-bold text-[#3749BB]">
+      <div className=" text-center capitalize text-lg font-bold text-[#3749BB] w-full bg-white mt-5 py-4 rounded">
         <a href="#">recently viewed</a>
       </div>
-    </div>
+    </section>
   );
 };
 

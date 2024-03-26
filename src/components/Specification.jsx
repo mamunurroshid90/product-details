@@ -8,24 +8,24 @@ const Specification = ({
   // console.log(basicInformation[0].name);
 
   return (
-    <div>
-      <div className=" bg-[#f2f4f8] mt-4">
-        <div class=" w-full my-10 ">
-          <div className=" p-3 text-sm gap-3 flex flex-wrap">
-            <button className=" bg-white px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
+    <section className=" bg-[#F2F4F8] mx-4">
+      <div className="">
+        <div class=" w-full ">
+          <div className=" text-sm gap-3 flex flex-wrap my-5">
+            <button className=" bg-white sm:flex-auto md:flex-auto px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
               Specification
             </button>
-            <button className=" bg-white px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
+            <button className=" bg-white sm:flex-auto md:flex-auto px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
               description
             </button>
-            <button className=" bg-white px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
+            <button className=" bg-white sm:flex-auto md:flex-auto px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
               Questions
             </button>
-            <button className=" bg-white px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
+            <button className=" bg-white sm:flex-auto md:flex-auto px-4 py-2 rounded capitalize hover:bg-[#ef4a23] hover:text-white">
               reviews
             </button>
           </div>
-          <div className="p-3 bg-white shadow-md rounded">
+          <div className="p-4 bg-white shadow-md rounded">
             <h2 class="text-lg font-semibold border-b pb-4">Specification</h2>
             <div class="mt-4">
               <div class="bg-[#F5F6FC] p-3 rounded">
@@ -34,40 +34,40 @@ const Specification = ({
                 </p>
               </div>
               <div class="mt-2">
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block  w-[250px] text-[#666666] capitalize">
                     {basicInformation[0].name}
                   </span>
-                  <span className=" text-sm font-bold">
+                  <span className=" text-sm block font-bold">
                     {basicInformation[0].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {basicInformation[1].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {basicInformation[1].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {basicInformation[2].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {basicInformation[2].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {basicInformation[3].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {basicInformation[3].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {basicInformation[4].name}
                   </span>
                   <span className=" text-sm font-bold">
@@ -83,24 +83,24 @@ const Specification = ({
                 </p>
               </div>
               <div class="mt-2">
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {memorySpecifications[0].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {memorySpecifications[0].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {memorySpecifications[1].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {memorySpecifications[1].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {memorySpecifications[2].name}
                   </span>
                   <span className=" text-sm font-bold">
@@ -116,24 +116,24 @@ const Specification = ({
                 </p>
               </div>
               <div class="mt-2">
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div className="lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {GraphicsSpecifications[0].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {GraphicsSpecifications[0].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class=" lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {GraphicsSpecifications[1].name}
                   </span>
                   <span className=" text-sm font-bold">
                     {GraphicsSpecifications[1].value}
                   </span>
                 </div>
-                <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                  <span className="text-sm text-[#666666] capitalize">
+                <div class=" lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                  <span className="text-sm block w-[250px] text-[#666666] capitalize">
                     {GraphicsSpecifications[2].name}
                   </span>
                   <span className=" text-sm font-bold">
@@ -148,8 +148,8 @@ const Specification = ({
                   </p>
                 </div>
                 <div class="mt-2">
-                  <div class="flex flex-col gap-2 py-2 border-b hover:bg-[#f2f4f8]">
-                    <span className="text-sm text-[#666666] capitalize">
+                  <div class=" lg:flex gap-2 py-2 border-b hover:bg-[#f2f4f8]">
+                    <span className="text-sm block w-[250px] text-[#666666] capitalize">
                       {warrantyInformation[0].name}
                     </span>
                     <span className=" text-sm font-bold">
@@ -162,7 +162,7 @@ const Specification = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

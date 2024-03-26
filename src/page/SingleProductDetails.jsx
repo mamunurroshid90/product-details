@@ -26,8 +26,8 @@ const SingleProductDetails = () => {
 
   // console.log(basicInformation);
   return (
-    <div>
-      <div className="max-w-container px-3 mx-auto">
+    <div className=" bg-[#F2F4F8] pb-[50px]">
+      <div className="mx-auto">
         <ProductInfo
           brandName={name}
           brand={brand}
@@ -36,7 +36,7 @@ const SingleProductDetails = () => {
           inventory={inventory}
           description={description}
         />
-        <div className="">
+        <div className="lg:flex mt-5">
           <div className="">
             <Specification
               basicInformation={basicInformation}
