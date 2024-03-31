@@ -12,7 +12,7 @@ const Questions = () => {
   return (
     <section className=" mx-4">
       <div className="p-4 bg-white rounded shadow">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-3">
           <div>
             <h2 className=" text-lg capitalize font-semibold">question(0)</h2>
             <p className="text-[#666666] text-sm my-2">
@@ -20,12 +20,14 @@ const Questions = () => {
               product from expert.
             </p>
           </div>
-          <button
-            onClick={handleQuestionButton}
-            className=" bg-white border-2 w-fit border-[#4054d6] inline-block hover:text-[#fff] hover:bg-[#2a378f] delay-100 transition-all text-[#4054d6] capitalize font-semibold px-5 py-2 rounded"
-          >
-            ask question
-          </button>
+          <div>
+            <button
+              onClick={handleQuestionButton}
+              className=" bg-white border-2 w-fit border-[#4054d6] inline-block hover:text-[#fff] hover:bg-[#2a378f] delay-100 transition-all text-[#4054d6] capitalize font-semibold px-5 py-2 rounded"
+            >
+              ask question
+            </button>
+          </div>
         </div>
         <div className=" flex flex-col justify-center items-center h-[250px] border-t mt-8">
           <span className=" text-[#4054d6] text-5xl p-6 bg-[#F5F6FC] rounded-full mb-4">

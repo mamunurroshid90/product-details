@@ -1,4 +1,7 @@
 import React from "react";
+import { FaMinus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
+// import { RiNumber1 } from "react-icons/ri";
 
 const ProductInfo = ({
   brandName,
@@ -52,7 +55,74 @@ const ProductInfo = ({
               view more info
             </a>
           </div>
+          <div className="">
+            <h3 className=" text-xl pt-6 pb-4 capitalize">Payment Options</h3>
+            <div className=" flex flex-col gap-4 lg:flex-row lg:flex lg:gap-x-4">
+              <label
+                htmlFor="radio"
+                className=" border-2 border-[#edf2f5] w-full  flex gap-3 p-4 rounded lg:basis-[45%] hover:border-blue-500"
+              >
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="radio"
+                  className=" w-5"
+                  id="radio"
+                />
+                <span className=" pl-4">
+                  <span>
+                    <span className=" text-xl font-bold mr-2">6,999৳</span>
+                    <span className=" text-lg line-through text-[#666]">
+                      7,699৳
+                    </span>
+                  </span>
+                  <div className=" text-[13px] capitalize">
+                    Cash Discount Price
+                  </div>
+                  <div className=" text-[13px] text-[#666] capitalize">
+                    Online / Cash Payment
+                  </div>
+                </span>
+              </label>
+              <label
+                htmlFor="radio"
+                className=" border-2 border-[#edf2f5] w-full  flex gap-3 p-4 rounded lg:basis-[55%] hover:border-blue-500"
+              >
+                <input type="radio" name="radio" className=" w-5" id="radio" />
+                <span className=" pl-4">
+                  <span>
+                    <span className=" text-xl font-bold mr-2">6,999৳</span>
+                    <span className=" text-lg line-through text-[#666]">
+                      7,699৳
+                    </span>
+                  </span>
+                  <div className=" text-[13px] capitalize">
+                    Cash Discount Price
+                  </div>
+                  <div className=" text-[13px] text-[#666] capitalize">
+                    Online / Cash Payment
+                  </div>
+                </span>
+              </label>
+            </div>
+          </div>
           <div className=" mt-5 gap-3 flex md:flex">
+            <label htmlFor="button" className=" w-[140px] flex">
+              <span className="flex flex-auto text-center items-center border border-[#edf2f5] p-2">
+                <FaMinus className=" mx-auto text-base cursor-pointer h-5" />
+              </span>
+              <span className=" flex flex-auto text-center items-start border border-[#edf2f5]">
+                <input
+                  type="number"
+                  name="quantity"
+                  value={1}
+                  className=" w-[40px] h-[40px] text-center"
+                />
+              </span>
+              <span className="flex flex-auto text-center items-center border border-[#edf2f5] p-2">
+                <FaPlus className="mx-auto text-base cursor-pointer h-5" />
+              </span>
+            </label>
             <button className=" bg-[#4054d6] w-full flex-auto hover:bg-[#2a378f] delay-100 transition-all text-sm text-white capitalize font-semibold px-3 py-2 rounded">
               Buy now
             </button>
